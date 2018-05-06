@@ -1,0 +1,31 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="title"
+            type="String" />
+
+        <variable
+            name="clickListener"
+            type="android.view.View.OnClickListener" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:background="@android:color/holo_purple"
+            android:layout_width="100dp"
+            android:layout_height="250dp"
+            android:textAlignment="center"
+            android:text="@{title}"
+            android:gravity="center"
+            tools:text="This is a string"
+            android:onClick="@{clickListener}"/>
+    </LinearLayout>
+
+</layout>
